@@ -1,0 +1,20 @@
+Q1:print("Content-Type: application/json")
+
+Q2:print(json.dumps(dict(os.environ), indent=2))
+
+Q3: HTTP User-Agent
+
+Q4:
+s = cgi.FieldStorage()
+username = s.getfirst("username")
+password = s.getfirst("password")
+
+Q5:Set-COOKIE，
+print(f"Set-Cookie: username={username}")
+print(f"Set-Cookie: password={password}")
+
+Q6:HTTP-COOKIE，cookie = SimpleCookie(os.environ["HTTP_COOKIE"])
+
+Q7: Cookies is a local file store user informations can auto enter account and password for you.
+
+Q8:https://github.com/JiaYiChe/cgi-lab
